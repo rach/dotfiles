@@ -1,3 +1,0 @@
-[submodule "tmux/plugins/powerline"]
-	path = tmux/plugins/powerline
-	url = https://github.com/Lokaltog/powerline.git
