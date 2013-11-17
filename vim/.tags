@@ -1,0 +1,43 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+<A-j>	/Users/rachid/.vim/config.vim	/^inoremap <A-j> <Esc>:m .+1<CR>==gi$/;"	m	language:Vim
+<A-j>	/Users/rachid/.vim/config.vim	/^nnoremap <A-j> :m .+1<CR>==$/;"	m	language:Vim
+<A-j>	/Users/rachid/.vim/config.vim	/^vnoremap <A-j> :m '>+1<CR>gv=gv$/;"	m	language:Vim
+<A-k>	/Users/rachid/.vim/config.vim	/^inoremap <A-k> <Esc>:m .-2<CR>==gi$/;"	m	language:Vim
+<A-k>	/Users/rachid/.vim/config.vim	/^nnoremap <A-k> :m .-2<CR>==$/;"	m	language:Vim
+<A-k>	/Users/rachid/.vim/config.vim	/^vnoremap <A-k> :m '<-2<CR>gv=gv$/;"	m	language:Vim
+<C-k>	/Users/rachid/.vim/config.vim	/^imap <C-k>     <Plug>(neosnippet_expand_or_jump)$/;"	m	language:Vim
+<C-n>	/Users/rachid/.vim/config.vim	/^nnoremap <C-n> :call NumberToggle()<cr>$/;"	m	language:Vim
+<F7>	/Users/rachid/.vim/config.vim	/^nmap <silent> <F7> :call ToggleSpell()<CR>$/;"	m	language:Vim
+<TAB>	/Users/rachid/.vim/config.vim	/^imap <expr><TAB> neosnippet#expandable_or_jumpable() ? "\\<Plug>(neosnippet_expand_or_jump)" : pumvisible() ? "\\<C-n>" : "\\<TAB>"$/;"	m	language:Vim
+<Tab>	/Users/rachid/.vim/config.vim	/^inoremap <Tab> <C-R>=CleverTab()<CR>$/;"	m	language:Vim
+<leader>n	/Users/rachid/.vim/config.vim	/^map <leader>n <plug>NERDTreeTabsToggle<CR>$/;"	m	language:Vim
+<leader>p	/Users/rachid/.vim/config.vim	/^nmap <leader>p :set paste!<CR>$/;"	m	language:Vim
+<leader>s	/Users/rachid/.vim/config.vim	/^nmap <leader>s :set spell!<CR>$/;"	m	language:Vim
+<leader>t	/Users/rachid/.vim/config.vim	/^map <leader>t :TagbarToggle<CR>$/;"	m	language:Vim
+CleverTab	/Users/rachid/.vim/config.vim	/^function! CleverTab()$/;"	f	language:Vim
+NERDTreeIgnore	/Users/rachid/.vim/config.vim	/^let NERDTreeIgnore = ['\\.pyc$', '\\.egg-info$' ]$/;"	v	language:Vim
+NumberToggle	/Users/rachid/.vim/config.vim	/^function! NumberToggle()$/;"	f	language:Vim
+ToggleSpell	/Users/rachid/.vim/config.vim	/^function! ToggleSpell()$/;"	f	language:Vim
+b:myLang	/Users/rachid/.vim/config.vim	/^let b:myLang=0$/;"	v	language:Vim
+g:ctrlp_extensions	/Users/rachid/.vim/config.vim	/^let g:ctrlp_extensions = ['tag']$/;"	v	language:Vim
+g:easytags_dynamic_files	/Users/rachid/.vim/config.vim	/^let g:easytags_dynamic_files = 2$/;"	v	language:Vim
+g:easytags_python_enabled	/Users/rachid/.vim/config.vim	/^let g:easytags_python_enabled = 0$/;"	v	language:Vim
+g:html_indent_inctags	/Users/rachid/.vim/config.vim	/^let g:html_indent_inctags = "html,body,head,tbody"$/;"	v	language:Vim
+g:html_indent_script1	/Users/rachid/.vim/config.vim	/^let g:html_indent_script1 = "inc"$/;"	v	language:Vim
+g:html_indent_style1	/Users/rachid/.vim/config.vim	/^let g:html_indent_style1 = "inc"$/;"	v	language:Vim
+g:jedi#popup_on_dot	/Users/rachid/.vim/config.vim	/^let g:jedi#popup_on_dot = 0$/;"	v	language:Vim
+g:myLangList	/Users/rachid/.vim/config.vim	/^let g:myLangList=["nospell","fr_fr","en_gb"]$/;"	v	language:Vim
+g:neocomplcache_enable_at_startup	/Users/rachid/.vim/config.vim	/^let g:neocomplcache_enable_at_startup = 1$/;"	v	language:Vim
+g:neocomplcache_omni_functions	/Users/rachid/.vim/config.vim	/^    let g:neocomplcache_omni_functions = {}$/;"	v	language:Vim
+g:neocomplcache_omni_functions	/Users/rachid/.vim/config.vim	/^let g:neocomplcache_omni_functions['python'] = 'jedi#complete'$/;"	v	language:Vim
+g:neosnippet#snippets_directory	/Users/rachid/.vim/config.vim	/^let g:neosnippet#snippets_directory='~\/.vim\/bundle\/snipmate-snippets\/snippets'$/;"	v	language:Vim
+g:pymode_folding	/Users/rachid/.vim/config.vim	/^let g:pymode_folding = 0$/;"	v	language:Vim
+g:pymode_updatetime	/Users/rachid/.vim/config.vim	/^let g:pymode_updatetime = 4000$/;"	v	language:Vim
+g:tabman_side	/Users/rachid/.vim/config.vim	/^let g:tabman_side = 'right'$/;"	v	language:Vim
+mapleader	/Users/rachid/.vim/config.vim	/^let mapleader = ","$/;"	v	language:Vim
+reload_vimrc	/Users/rachid/.vim/config.vim	/^augroup reload_vimrc " {$/;"	a	language:Vim
