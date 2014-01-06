@@ -12,10 +12,9 @@ source $HOME/conf/zsh/scripts/functions.zsh
 source $HOME/conf/zsh/scripts/history.zsh
 source $HOME/conf/zsh/scripts/zsh_hooks.zsh 
 
-#HISTSIZE=5000
-#SAVEHIST=5000
-#HISTFILE=~/.zsh_history
-#setopt SHARE_HISTORY
+# Add auto-completion for tmuxp
+source tmuxp.zsh
+
 
 ADOTDIR=$HOME/conf/zsh/bundle
 source $HOME/conf/zsh/antigen/antigen.zsh

@@ -1,0 +1,32 @@
+session_name: tymify
+start_directory: ~/Dev/tymify/web-app/
+windows:
+  - window_name: run
+    focus: True
+    shell_command_before:
+       - workon tymify
+    panes:
+       - shell_command:
+         focus: True
+       - pserve --reload development.ini 
+  - window_name: psql
+    shell_command_before:
+       - workon tymify
+    panes:
+       - shell_command: psql -d tymify -U tymify
+  - window_name: vim
+    shell_command_before:
+       - workon tymify
+    panes:
+       - shell_command: vim
+  - window_name: git
+    shell_command_before:
+       - workon tymify
+    panes:
+       - pwd
+       - shell_command:
+           - zsh -c 'while :; git log --oneline --graph --decorate --color=always; do sleep 15; done'
+
+
+       
+

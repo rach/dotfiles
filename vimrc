@@ -17,7 +17,8 @@ set background=dark
 colorscheme Tomorrow-Night
 set laststatus=2   " Always show the statusline
 set encoding=utf-8 " Necessary to show unicode glyphs
-set t_Co=256 " Explicitly tell vim that the terminal supports 256 color
+"set t_Co=256 " Explicitly tell vim that the terminal supports 256 color
+set term=screen-256color
 set nocompatible   " Disable vi-compatibility
 set laststatus=2   " Always show the statusline
 set encoding=utf-8 " Necessary to show unicode glyphs
@@ -25,7 +26,14 @@ set encoding=utf-8 " Necessary to show unicode glyphs
 set guifont=h14
 let NERDTreeIgnore = ['\.pyc$', '\.egg-info$' ]
 set backspace=indent,eol,start
+
+"set clipboard=unnamed " for adding cliboard to unnamed register (system)
+" https://coderwall.com/p/j9wnfw
+
 "For the nice looking powerline symbols to appear
+
+" autocmd BufEnter * :syntax sync fromstart
+
 
 """"
 " vim-airline
@@ -79,11 +87,6 @@ function! CleverTab()
 endfunction
 inoremap <Tab> <C-R>=CleverTab()<CR>
 
-""""""
-" Disable rope completion in Python Mode
-"
-"let g:pymode_rope_vim_completion = 0
-
 
 """"""""
 " Relative number
@@ -92,6 +95,7 @@ inoremap <Tab> <C-R>=CleverTab()<CR>
 
 function! NumberToggle()
   if(&relativenumber == 1)
+    set norelativenumber
     set number
   else
     set relativenumber
@@ -143,6 +147,7 @@ let mapleader = ","
 nmap <leader>s :set spell!<CR>
 map <leader>n <plug>NERDTreeTabsToggle<CR>
 
+
 """""
 " Move line Up and down
 "
@@ -150,12 +155,12 @@ map <leader>n <plug>NERDTreeTabsToggle<CR>
 "of text up or down. The mappings work in normal, insert and visual modes,
 "allowing you to move the current line, or a selected block of lines.
 
-nnoremap <A-j> :m .+1<CR>==
-nnoremap <A-k> :m .-2<CR>==
-inoremap <A-j> <Esc>:m .+1<CR>==gi
-inoremap <A-k> <Esc>:m .-2<CR>==gi
-vnoremap <A-j> :m '>+1<CR>gv=gv
-vnoremap <A-k> :m '<-2<CR>gv=gv
+nnoremap <S-j> :m .+1<CR>==
+nnoremap <S-k> :m .-2<CR>==
+inoremap <S-j> <Esc>:m .+1<CR>==gi
+inoremap <S-k> <Esc>:m .-2<CR>==gi
+vnoremap <S-j> :m '>+1<CR>gv=gv
+vnoremap <S-k> :m '<-2<CR>gv=gv
 
 "In normal mode or in insert mode, press Alt-j to move the current line 
 "down, or press Alt-k to move the current line up.
