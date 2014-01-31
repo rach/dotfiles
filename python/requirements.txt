@@ -1,0 +1,7 @@
+virtualenv
+virtualenvwrapper
+virtualenvwrapper.npm
+virtualenvwrapper.gem
+tmuxp
+awscli
+flake8

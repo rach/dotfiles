@@ -1,37 +1,35 @@
-session_name: tymify
-start_directory: ~/Dev/tymify/web-app/
+session_name: theyuseit
+start_directory: ~/Dev/lostproperty/theyuseit/web-app/
 windows:
   - window_name: run
     focus: True
     shell_command_before:
-       - workon tymify
+       - workon theyuseit
     panes:
        - shell_command:
          focus: True
        - pserve --reload development.ini 
   - window_name: deploy
     shell_command_before:
-       - workon tymify
+       - workon theyuseit
     panes:
        - shell_command: cd deploy
   - window_name: vim
     shell_command_before:
-       - workon tymify
+       - workon theyuseit
     panes:
        - shell_command: vim
   - window_name: git
     shell_command_before:
-       - workon tymify
+       - workon theyuseit
     panes:
        - pwd
        - shell_command:
            - zsh -c 'while :; git log --oneline --graph --decorate --color=always; do sleep 15; done'
   - window_name: psql
     shell_command_before:
-       - workon tymify
+       - workon theyuseit
     panes:
-       - shell_command: psql -d tymify -U tymify
+       - shell_command: psql -d theyuseit -U theyuseit
 
-
-       
 

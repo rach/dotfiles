@@ -1,36 +1,31 @@
-session_name: tymify
-start_directory: ~/Dev/tymify/web-app/
+session_name: seabeard
+start_directory: ~/Dev/lostproperty/seabeard/
 windows:
   - window_name: run
     focus: True
     shell_command_before:
-       - workon tymify
+       - workon seabeard
     panes:
        - shell_command:
          focus: True
-       - pserve --reload development.ini 
-  - window_name: deploy
-    shell_command_before:
-       - workon tymify
-    panes:
-       - shell_command: cd deploy
+       - bin/dev_appserver parts/seabeard
   - window_name: vim
     shell_command_before:
-       - workon tymify
+       - workon seabeard
     panes:
        - shell_command: vim
   - window_name: git
     shell_command_before:
-       - workon tymify
+       - workon seabeard
     panes:
        - pwd
        - shell_command:
            - zsh -c 'while :; git log --oneline --graph --decorate --color=always; do sleep 15; done'
-  - window_name: psql
+  - window_name: mysql
     shell_command_before:
-       - workon tymify
+       - workon seabeard
     panes:
-       - shell_command: psql -d tymify -U tymify
+            - shell_command: if ! mysql.server status; then mysql.server start; fi; mysql seabeard -u seabeard --password=seabeard 
 
 
        

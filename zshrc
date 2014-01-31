@@ -32,4 +32,5 @@ source ~/.profile
 source ~/.aws
 
 export PATH=/Applications/Postgres.app/Contents/MacOS/bin:$PATH
+export PATH=~/.bin:$PATH
 #export PATH=$PATH:$GOPATH/bin

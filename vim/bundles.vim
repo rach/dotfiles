@@ -77,6 +77,8 @@ Bundle 'mitsuhiko/vim-python-combined'
 Bundle 'sjl/gundo.vim'
 "Gundo.vim is Vim plugin to visualize your Vim undo tree.
 
+Bundle 'python.vim'
+"Enhanced version of the original python.vim for Python programming language. 
 
 "Bundle 'movewin.vim'
 Bundle 'scrooloose/nerdtree'
