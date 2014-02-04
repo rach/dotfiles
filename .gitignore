@@ -1,4 +1,3 @@
 *.swp
-!bundle/vundle/
-bundle/
+zsh/bundle/
 .netrwhist
